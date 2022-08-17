@@ -1,0 +1,59 @@
+.emotion-card {
+
+  &__inner {
+    display: flex;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__box-rigth {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__wrapper {
+    
+    position: relative;
+
+    img {
+      border-radius: 50%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      background-image: url('../images/content/icons/playbtn-red.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+
+    &--second::before {
+      right: 10px;
+      bottom: 10px;
+    }
+
+    &--first::before {
+      right: 15px;
+      bottom: 10px;
+    }
+
+    &--second {
+      margin-bottom: 40px;
+    }
+
+    &--third {
+      padding-left: 40px;
+    }
+  }
+}
+
+

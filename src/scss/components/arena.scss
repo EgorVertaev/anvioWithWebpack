@@ -1,0 +1,105 @@
+.arena {
+
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 540px;
+    width: 100%;
+    margin-right: 70px;
+   
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 45px;
+  }
+
+  &__inner {
+    display: flex;
+    margin-bottom: 45px;
+
+  }
+
+  &__info {
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 70px;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+    
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -50%;
+      width: 60px;
+      height: 60px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    &--gamepad::before {
+      background-image: url('./../images/content/icons/gamepad.svg');
+    }
+
+    &--time::before {
+      background-image: url('./../images/content/icons/Clock.svg');
+    }
+
+    &--money::before {
+      background-image: url('./../images/content/icons/handmoney.svg');
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  &__buttons {
+
+    a + a {
+      margin-left: 20px;
+    }
+  }
+
+  &__photo {
+  }
+
+  &__main {
+    margin-bottom: -30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: calc( 100% / 3 - 30px);
+    height: 500px;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+
+    &--large {
+      width: 100%;
+    }
+
+    &--medium {
+      width: calc(100% / 2 - 30px);
+    }
+  }
+}

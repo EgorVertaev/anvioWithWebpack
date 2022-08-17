@@ -1,0 +1,207 @@
+.footer {
+  &__wrapper  {
+    padding: 100px 0;
+    background-color: $black;
+    color: $white;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__main {
+    max-width: 440px;
+    margin-right: 83px;
+  }
+
+  &__logo {
+    max-width: 400px;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    text-transform: uppercase;
+    border-top: 2px solid rgba($gray-bg, 0.3);
+
+    &--last {
+      border-bottom: 2px solid rgba($gray-bg, 0.3);
+    }
+  }
+
+  &__link {
+    padding: 20px 0;
+
+  }
+
+  &__sub-list {
+  }
+
+  &__sub-item {
+  }
+
+  &__sub-link {
+    color: rgba($gray-bg, 0.5);
+    padding: 20px 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  &__contact {
+  }
+
+
+  &__bottom {
+    padding: 50px 0;
+    background-color: $semi-black;
+    color: $white;
+  }
+
+  &__wrapper-inner {
+    padding: 0 85px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    text-transform: uppercase;
+  }
+
+  &__general {
+    display: flex;
+  }
+
+  &__general-item {
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__general-link {
+  }
+
+  &__creative {
+    text-transform: uppercase;
+  }
+//  rigth
+  &__contact {
+  }
+
+  &__contact-inner {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  &__contact-left {
+    margin-right: 30px;
+    max-width: 500px;
+  }
+
+  &__tel {
+    margin-bottom: 50px;
+  }
+
+  &__contact-title {
+    color: rgba($gray-bg, 0.5);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  &__tel-link {
+    font-size: 32px;
+  }
+
+  &__social {
+    margin-bottom: 50px;
+  }
+
+  &__social-list {
+    display: flex;
+  }
+
+  &__social-item {
+    margin-right: 10px;
+  }
+
+  &__social-link {
+  }
+
+  &__social-icon {
+  }
+
+  &__adress {
+  }
+
+  &__adress-link {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  &__adress-metro {
+    padding-left: 40px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      bottom: 0;
+      width: 30px;
+      height: 20px;
+      background-image: url(./../images/content/icons/Kyiv_Metro.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+  }
+
+  &__contact-right {
+  }
+
+  &__email {
+    margin-bottom: 50px;
+  }
+
+  &__email-link {
+    font-size: 36px;
+  }
+
+  &__form {
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  &__input {
+    padding: 18px 200px 18px 20px;
+    border: 2px solid rgba($gray-bg, 0.3);
+    border-radius: 30px;
+    background-color: transparent;
+    color: $white;
+    width: 100%;
+  }
+
+  &__btn {
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+  }
+
+  &__request {
+  }
+
+  &__request-btn {
+  }
+}
+
+
+
+
+

@@ -1,0 +1,64 @@
+.reasons {
+  padding-top: 180px;
+  position: relative;
+  margin-bottom: 210px;
+  
+  &__title {
+    font-size: 64px;
+    max-width: 1050px;
+    margin-bottom: 75px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+  }
+
+  &__item {
+    margin-bottom: 51px;
+    padding-left:110px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 80px;
+      height: 80px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    &--dev::before {
+      background-image: url('./../images/content/icons/gamepad.svg');
+    }
+
+    &--area::before {
+      background-image: url('./../images/content/icons/area-red.svg');
+    }
+
+    &--freedom::before {
+      background-image: url('./../images/content/icons/feedom.svg');
+    }
+
+  }
+
+  &__subtitle {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    line-height: 1.5;
+  }
+
+  &__map {
+    position: absolute;
+    top: -100px;
+    right: 10px;
+  }
+}
+

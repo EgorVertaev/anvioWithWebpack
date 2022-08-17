@@ -1,0 +1,24 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'libs';
+
+
+
+@import './components/header.scss';
+@import './components/btn.scss';
+@import './components/footer.scss';
+@import './components/menu-mob.scss';
+@import './components/news-card.scss';
+@import './components/slider-news.scss';
+@import './components/slider-emotions.scss';
+@import './components/arena-card.scss';
+@import './components/emotion-card.scss';
+@import './components/arena.scss';
+@import './components/birthdays.scss';
+
+
+
+@import 'index-page'
+

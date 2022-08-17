@@ -1,0 +1,43 @@
+
+.slider-events {
+  position: relative; 
+}
+
+.slider-events__inner.swiper {
+  position: static;
+}
+
+.slider-events__inner.swiper-wrapper {
+  position: static;
+}
+
+.slider-events__inner.swiper-slide {
+  position: static;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -30px;
+}
+
+.slider-events__inner .swiper-button-prev {
+  left: -30px;
+}
+
+.slider-events__inner .swiper-button-next {
+  right: -30px
+}
+
+.slider-events__inner .swiper-button-next,
+.slider-events__inner .swiper-button-prev {
+  background-color: $white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.slider-events__inner .swiper-button-next::after,
+.slider-events__inner .swiper-button-prev::after {
+  color: $black;
+  font-size: 24px;
+  font-weight: 700;
+}

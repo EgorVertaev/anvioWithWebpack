@@ -1,0 +1,73 @@
+.birthdays {
+  background-image: url('./../images/content/birthdays/bg-left.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  &__inner {
+    background-image: url('./../images/content/birthdays/bg-rigth.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+
+  &__wrapper {
+    padding: 100px 300px;
+  }
+
+  &__content {
+    display: flex;
+    margin-right: 90px;
+  }
+
+  &__info {
+    max-width: 540px;
+  }
+
+  &__title {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+
+  &__descript {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    width: fit-content;
+    position: relative;
+    margin-bottom: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -120px;
+      bottom: -10px;
+      width: 100px;
+      height: 100px;
+      background-image: url('./../images/content/icons/arrow-large.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+  } 
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 460px;
+  }
+
+  &__item {
+    
+  }
+
+  &__link {
+    color: $red;
+  }
+
+  &__slider {
+    max-width: 50%;
+  }
+}
+

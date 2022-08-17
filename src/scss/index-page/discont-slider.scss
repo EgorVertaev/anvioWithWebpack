@@ -1,0 +1,106 @@
+.discond-slider{
+
+  &__wrapper {
+    width: 500px;
+    height: 200px;
+    
+  }
+
+  &__slide {
+    background-color: rgba($white, 0.4);
+    border-radius: 30px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      z-index: 1;
+    }
+
+    &--first::after {
+      width: 200px;
+      height: 200px;
+      right: 0;
+      bottom: -20px;
+      background-image: url(./../images/content/slider-discont/slide1.svg);
+    }
+
+    &--second::after {
+      width: 250px;
+      height: 250px;
+      right: 0;
+      top: -30px;
+      background-image: url(./../images/content/slider-discont/slide2.svg);
+    }
+
+    &--third::after {
+      width: 200px;
+      height: 200px;
+      right: 0;
+      bottom: -20px;
+      background-image: url(./../images/content/slider-discont/slide3.svg);
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding: 30px 50px;
+    text-transform: uppercase;
+    font-size: 24px;
+    z-index: 2;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+    span {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+}
+.discond-slider.swiper {
+  position: static;
+}
+.discond-slider.swiper-wrapper {
+  position: static;
+}
+.discond-slider.swiper-slide {
+  position: static;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -30px;
+}
+
+.discond-slider .swiper-button-prev {
+  left: -30px;
+}
+
+.discond-slider .swiper-button-next {
+  right: -30px
+}
+
+.discond-slider .swiper-button-next,
+.discond-slider .swiper-button-prev {
+  background-color: $white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.discond-slider .swiper-button-next::after,
+.discond-slider .swiper-button-prev::after {
+  color: $black;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.discond-slider .swiper-pagination-bullets span {
+  width: 12px;
+  height: 12px;
+  background-color: $white;
+}
