@@ -12,6 +12,11 @@
     padding: 20px 40px;
     border: 2px solid $white;
     background-color: transparent;
+
+    @include r($sm) {
+      font-size: 14px;
+      padding: 11px 20px; 
+    }
   }
 
   &--footerform {

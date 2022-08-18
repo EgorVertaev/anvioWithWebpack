@@ -1,40 +1,237 @@
 .preview {
   
   &__wrapper  {
-    margin-left: -30px;
+    margin: 0 -30px;
     background-image: url(./../images/content/backgroundTop.png);
     background-repeat: no-repeat;
     background-position: left top;
     position: relative;
     height: 1200px;
+
+    @include r($xsm) {
+       background-position: 0 -150px; 
+       height: 1100px;
+    }
   }
 
   &__inner {
     color: $white;
     padding: 230px 0 0 186px;
+
+    @include r($xxl) {
+      padding-top: 150px;
+      padding-left: 100px;
+    }
+
+    @include r($xl) {
+      padding-top: 100px;
+      padding-left: 50px;
+    }
+
+    @include r($lg) {
+      padding-top: 70px;
+      padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
   }
 
   &__text {
     margin-bottom: 70px;
+
+    @include r($xxl) {
+      margin-bottom: 40px;
+    }
+
+    @include r($xl) {
+      margin-bottom: 30px;
+    }
+
+    @include r($lg) {
+      text-align: center;
+    }
+
+    @include r($md) {
+        margin-bottom: 0;
+    }
+  }
+
+  &__mob {
+    display: none;
+    margin-bottom: 60px;
+
+    @include r($lg) {
+        display: block;
+    }
+  }
+
+  &__mob-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+    @include r($md) {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    @include r($sm) {
+      font-size: 16px;
+    }
+  }
+
+  &__mob-location {
+    font-size: 28px;
+    display: inline-block;
+    position: relative;
+
+
+    @include r($md) {
+      font-size: 20px;        
+    }
+
+    @include r($sm) {
+      font-size: 16px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -55px;
+      bottom: -3px;
+      width: 40px;
+      height: 40px;
+      background-image: url(./../images/content/icons/metro-wb.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      background-color: $white;
+      border-radius: 50%;
+
+      @include r($md) {
+        width: 30px;
+        height: 30px;
+        left: -40px;
+      }
+
+      @include r($sm) {
+        bottom: 0;
+        width: 20px;
+        height: 20px;
+        left: -30px;
+      }
+    }
   }
 
   &__title {
     font-size: 96px;
     font-weight: 600;
-    font-family: "EuclidCircularA";
     text-transform: uppercase;
     margin-bottom: 10px;
+    letter-spacing: 0.05em;
+
+    @include r($xxl) {
+        font-size: 72px;
+    }
+
+    @include r($md) {
+      font-size: 56px;
+    }
+
+    @include r($sm) {
+      font-size: 32px;
+    }
   }
 
   &__subtitle {
-    font-family: "EuclidCircularA";
     font-size: 48px;
     max-width: 700px;
+
+    @include r($xxl) {
+      max-width: 500px;
+      font-size: 36px;
+    }
+
+    @include r($lg) {
+      max-width: 580px;
+      margin: 0 auto 40px;
+    }
+
+    @include r($md) {
+      max-width: 500px;
+      font-size: 28px;
+    }
+
+    @include r($sm) {
+      max-width: 250px;
+      font-size: 16px;
+    }
   }
 
   &__content {
     display: flex;
     margin-bottom: 80px;
+    position: relative;
+    width: 100%;
+    align-self: start;
+
+    @include r($xxl) {
+      flex-direction: column;
+    }
+
+    @include r($xl) {
+      flex-direction: row;
+      margin-bottom: 30px;
+    }
+
+    @include r($lg) {
+      padding-left: 60px;
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+
+    @include r($md) {
+      padding-left: 0px;
+    }
+
+    &::after {
+
+      @include r($lg) {
+        content: "";
+        position: absolute;
+        right: 60px;
+        top: -80px;
+        width: 400px;
+        height: 400px;
+        background-image: url(./../images/content/girl.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+      }
+
+      @include r($md) {
+        width: 350px;
+        height: 350px;
+        right: 0;
+      }
+
+      @include r($sm) {
+        top: -60px;
+        width: 300px;
+        height: 300px;
+        right: 0;
+      }
+
+      @include r($xsm) {
+        top: -60px;
+        width: 250px;
+        height: 250px;
+        right: 0;
+      }
+    }
   }
 
   &__item {
@@ -42,8 +239,42 @@
     padding-left: 75px;
     position: relative;
 
+    @include r($xxl) {
+      font-size: 28px;  
+    }
+
+    @include r($lg) {
+      font-size: 24px;  
+      padding-left: 100px;
+    }
+
+    @include r($md) {
+      font-size: 20px;  
+      padding-left: 75px;
+    }
+
+    @include r($sm) {
+      font-size: 14px;  
+      padding-left: 55px;
+    }
+    
+
     &:not(:last-child) {
       margin-right: 40px;
+
+      @include r($xxl) {
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
+      @include r($xl) {
+        margin-right: 30px;
+        margin-bottom: 0;
+      }
+
+      @include r($lg) {
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
     }
 
     span {
@@ -59,6 +290,22 @@
       height: 60px;
       background-repeat: no-repeat;
       background-size: contain;
+
+      @include r($lg) {
+          width: 80px;
+          height: 80px;
+      }
+
+      @include r($lg) {
+        width: 60px;
+        height: 60px;
+      }
+
+      @include r($sm) {
+        width: 40px;
+        height: 40px;
+    }
+
     }
 
     &--area::after {
@@ -80,9 +327,32 @@
     position: relative;
     width: 500px;
     height: 200px;
+    
+    @include r($lg) {
+      margin-left: -30px;
+      width: 450px;   
+    }
+
+    @include r($md) {
+      margin-left: -20px;
+      width: 450px;   
+    }
+
+    @include r($sm) {
+      padding: 0 20px;
+      max-width: 450px;
+      width: 100%;   
+    }
+
+    @include r($xsm) {
+      height: 140px;
+      
+    }
+
   }
 
   &__video {
+    background-image: url('./../images/content/prev-video.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -96,6 +366,40 @@
     right: -20px;
     top: 160px;
 
+    @include r($xxl) {
+      width: 700px;
+      height: 700px;
+      top: 200px;
+    }
+
+    @include r($xl) {
+      right: 0;
+      top: 600px;
+    }
+
+    @include r($lg) {
+      top: 980px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    @include r($md) {
+      width: 500px;
+      height: 500px;
+      top: 880px;
+    }
+
+    @include r($sm) {
+      width: 400px;
+      height: 400px;
+      top: 780px;
+    }
+
+    @include r($xsm) {
+        width: 320px;
+        height: 320px;
+        top: 750px;
+    }
   }
 
   &__location {
@@ -110,6 +414,24 @@
     bottom: 0;
     right: 50%;
     transform: translateX(65%);
+
+
+    @include r($xxl) {
+      bottom: -40px;
+      right: 40%;
+    }
+
+    @include r($xl) {
+      width: 350px;
+      height: 350px;
+      padding: 16px;
+      bottom: -40px;
+      right: 80%;
+    }
+
+    @include r($lg) {
+        display: none;
+    }
   }
 
   &__location-content {
@@ -120,11 +442,18 @@
 
   &__location-logo {
     margin-bottom: 20px;
+
+    @include r($xl) {
+      width: 150px; 
+    }
   }
 
   &__location-title {
     font-size: 32px;
     margin-bottom: 20px;
+    @include r($xl) {
+      font-size: 24px;
+    }
   }
 
   &__location-text {
@@ -150,8 +479,6 @@
     height: 64px;
     fill: $red
   }
-
-
 }
 
 

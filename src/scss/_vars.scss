@@ -1,11 +1,11 @@
-$xsl: 1910;
-$xxxl: 1660;
-$xxl: 1450;
-$xl: 1200;
-$lg: 992;
-$md: 768;
-$sm: 576;
-$xsm: 375;
+$xsl: 1910px;
+$xxxl: 1660px;
+$xxl: 1450px;
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+$xsm: 376px;
 
 $white: #ffffff;
 $black: #000000;
@@ -15,7 +15,7 @@ $semi-black: #1E1E1E;
 
 @mixin r($width) {
     
-    @media only screen and (max-width: $width + "px") {
+    @media only screen and (max-width: $width ) {
         @content;
     }
 }

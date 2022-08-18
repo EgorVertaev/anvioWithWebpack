@@ -3,7 +3,6 @@ import "../index.html"
 
 import Swiper from "swiper"
 
-
 const burger = document.querySelector('.menu__burger')
 const burgerInner = document.querySelector('.menu__burger-inner')
 const menuMob = document.querySelector('.menu-mob')

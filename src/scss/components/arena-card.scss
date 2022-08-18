@@ -50,5 +50,29 @@
     background-position: center center;
     transform: translate(-50%, -50%);
   }
+
+  &--one {
+    background-image: url('./../images/content/arena/video1.jpg');
+  }
+
+  &--two {
+    background-image: url('./../images/content/arena/video2.jpg');
+  }
+
+  &--three {
+    background-image: url('./../images/content/arena/video3.jpg');
+  }
+
+  &--four {
+    background-image: url('./../images/content/arena/video4.jpg');
+  }
+
+  &--five {
+    background-image: url('./../images/content/arena/video5.jpg');
+  }
+
+  &--six {
+    background-image: url('./../images/content/arena/video6.jpg');
+  }
 }
 

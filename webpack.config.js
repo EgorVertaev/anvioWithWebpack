@@ -32,7 +32,6 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/index.html'),
       filename: 'index.html',
-      
     }),
     new MiniCssExtractPlugin({
       filename: `./css/${filename('css')}`
@@ -71,13 +70,6 @@ module.exports = {
           filename: `fonts/${filename('[ext]')}`
         }
       },
-      // {
-        // test: /\.svg$/,
-        // loader: 'svg-sprite-loader',
-        // generator: {
-        //   filename: `sprite/${filename('[ext]')}`
-        // }
-      // }
     ]
   }
 }

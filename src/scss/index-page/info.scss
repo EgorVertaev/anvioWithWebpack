@@ -2,8 +2,8 @@
   margin-bottom: 157px;
   &__inner {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
 
   &__logo {
@@ -13,15 +13,35 @@
     img {
       width: 100%;
     }
+
+    @include r($lg) {
+      margin-bottom: 20px;
+    }
+
+    @include r($sm) {
+      margin-bottom: 10px;
+    }
   }
 
   &__content {
     display: flex;
     align-items: center;
+
+    @include r($lg) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__count {
     margin-right: 174px;
+
+    @include r($xl) {
+      margin-right: 50px;
+    }
+
+    @include r($lg) {
+      margin-right: 0;
+    }
   }
 
   &__count {
@@ -36,26 +56,64 @@
   &__club {
     display: flex;
     flex-direction: column;
+
+    @include r($lg) {
+      text-align: center;
+    }
   }
 
   &__num {
     font-size: 96px;
     font-weight: 600;
+
+    @include r($lg) {
+      font-size: 72px;
+    }
+
+    @include r($sm) {
+      font-size: 48px;
+    }
   }
 
   &__name {
     font-size: 32px;
     font-weight: 600;
+
+    @include r($lg) {
+      font-size: 26px;
+    }
+
+    @include r($sm) {
+      font-size: 16px;
+    }
   }
 
   &__text {
     max-width: 1070px;
+
+    @include r($lg) {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    @include r($sm) {
+      margin-bottom: 20px;
+    }
   }
 
   &__title {
     font-size: 64px;
     font-weight: 600;
     margin-bottom: 20px;
+
+    @include r($lg) {
+      font-size: 48px;
+    }
+
+    @include r($sm) {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
   }
 
   &__description {
@@ -63,6 +121,14 @@
     p:not(:last-child) {
       margin-bottom: 10px;
     }
+
+    @include r($lg) {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    @include r($sm) {
+      font-size: 14px;
+    }
   }
 }
-
