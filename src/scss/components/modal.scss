@@ -1,0 +1,219 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 201;
+  background-color: $white;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  background-color: $gray-bg;
+  padding: 50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s linear;
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__icon {
+    stroke: $black;
+    fill: $black;
+  }
+
+  &__inner {
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__main {
+    border: 5px solid $red;
+    border-radius: 30px;
+    background-color: $white;
+    padding: 30px;
+    width: 560px;
+    margin-right: 10px;
+  }
+
+  &__main-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 48px;
+  }
+
+  &__info {
+    background-color: $gray-bg;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 10px;
+  }
+
+  &__cost {
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+  }
+
+  &__forcomand {
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    &--right {
+      margin-bottom: 0;
+      justify-content: flex-start;
+
+      & > li {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  &__item {
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 50px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -5px;
+      width: 35px;
+      height: 35px;
+      
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    &--count::after {
+      width: 32px;
+      height: 38px;
+      background-image: url(./../images/content/icons/peaple.svg);
+    }
+
+    &--time::after {
+      background-image: url(./../images/content/icons/Clock.svg);
+    }
+
+    &--size::after {
+      background-image: url(./../images/content/icons/area-red.svg);
+    }
+  }
+
+  &__description {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__description-item {
+    list-style: disc;
+    margin-bottom: 5px;
+  }
+  
+  &__weekdays,
+  &__weekends {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+
+    & > span {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+    }
+  }
+
+  &__weekdays-person, 
+  &__weekends-person {
+    background-color: $gray-bg;
+    max-width: 300px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px 10px;
+    
+  }
+
+  &__cost-person {
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 5px;
+  }
+
+  &__important {
+    color: rgba($black, 0.5);
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+
+  &__rigth {
+    width: 560px;
+  }
+
+  &__games-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__games-item {
+    background-color: $white;
+    padding: 30px;
+    border-radius: 30px;
+  }
+
+  &__games-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+  }
+
+  &__games-title {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  &__games-cost {
+    background-color: $gray-bg;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__close-btn {
+    background-color: #fff;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -40px;
+    right: -40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__close {
+  }
+}
+

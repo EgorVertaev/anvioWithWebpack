@@ -1,0 +1,7 @@
+<svg>
+  <symbol id="close" viewBox="0 0 20 20">
+    <g>
+      <path d="M1 1L19 19M19 1L1 19" stroke="" stroke-linecap="round"/>
+    </g>
+  </symbol>
+</svg>

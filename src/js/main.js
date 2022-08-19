@@ -43,6 +43,22 @@ wrapper.addEventListener('click', () => {
 })
 
 
+const modal = document.querySelector('.modal')
+const openModal = document.querySelector('.btn-js')
+const closeModal = document.querySelector('.modal__close-btn')
+
+openModal.addEventListener('click', (e) => {
+  e.preventDefault();
+  modal.classList.add('modal--active')
+  body.classList.add('overlay-modal')
+})
+
+closeModal.addEventListener('click', () => {
+  modal.classList.remove('modal--active')
+  body.classList.remove('overlay-modal')
+})
+
+
 const swiper = new Swiper('.discond-slider', {
 
   navigation: {
