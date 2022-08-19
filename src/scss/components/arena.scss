@@ -3,13 +3,24 @@
   &__top {
     display: flex;
     align-items: center;
+
+    @include r($xxl) {
+      margin-bottom: 0;
+      flex-direction: column;
+    }
+
   }
 
   &__content {
     max-width: 540px;
     width: 100%;
     margin-right: 70px;
-   
+
+    @include r($xxl) {
+      max-width: 840px;
+      margin-right: 0;
+    }
+
   }
 
   &__title {
@@ -21,7 +32,6 @@
   &__inner {
     display: flex;
     margin-bottom: 45px;
-
   }
 
   &__info {
@@ -77,11 +87,20 @@
 
   &__main {
     margin-bottom: -30px;
+
+    @include r($xxl) {
+        margin-top: -80px;
+    }
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
+
+    @include r($lg) {
+      margin-right: 0;
+    }
   }
 
   &__item {
@@ -90,16 +109,34 @@
     width: calc( 100% / 3 - 30px);
     height: 500px;
 
-    &:nth-child(3) {
+  
+    @include r($xxl) {
+      width: calc(100% / 2 - 30px)
+    }
+
+    @include r($lg) {
+      width: 100%;
       margin-right: 0;
     }
 
     &--large {
       width: 100%;
+
+      @include r($xxl) {
+        width: calc(100% / 2 - 30px)
+      }
+
+      @include r($lg) {
+        width: 100%;
+    }
     }
 
     &--medium {
       width: calc(100% / 2 - 30px);
+
+      @include r($lg) {
+        width: 100%;
+    }
     }
   }
 }

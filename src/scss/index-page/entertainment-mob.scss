@@ -1,0 +1,270 @@
+.entertainment-mob {
+  display: none;
+
+  @include r($sm) {
+      display: block;
+  }
+
+  &__buttons {
+    
+  }
+
+  &__item {
+  }
+
+  &__button {
+    margin-bottom: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--active {
+      background-color: $white;
+      color: $black;
+      transition: rotate .2s linear;
+      margin-bottom: 0;
+      border-radius: 10px 10px 0 0;
+      border-bottom: 1px solid rgba($black, 0.5s);
+
+      .entertainment-mob__icon {
+        stroke: $black;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__icon {
+    fill: none;
+    stroke: $red;
+  }
+
+  &__sub {
+    margin-bottom: 10px;
+  }
+
+  &__arena {
+    background-color: $white;
+    border-radius: 0px 0px 20px 20px;
+    padding: 26px 20px;
+  }
+
+  &__content {
+    max-width: 540px;
+    width: 100%;
+    margin-right: 70px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  &__info {
+    position: relative;
+    width: 90px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 50px;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50px;
+      height: 50px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    &--gamepad::before {
+      left: 20px;
+      background-image: url('./../images/content/icons/gamepad.svg');
+    }
+
+    &--time::before {
+      left: 15px;
+      background-image: url('./../images/content/icons/Clock.svg');
+    }
+
+    &--money::before {
+      left: 15px;
+      background-image: url('./../images/content/icons/handmoney.svg');
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  &__buttons {
+    text-align: center;
+
+    a + a {
+      margin-left: 20px;
+    }
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    padding: 12px 20px;
+  }
+
+  &__photo {
+  }
+
+
+  &__slider {
+  }
+
+  &__arena-card {
+    padding: 30px;
+    width: 100%;
+    height: 500px;
+    background-image: url('./../images/content/arena/video1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    margin-bottom: 5px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      background-image: url('../images/content/icons/playbtn.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__arena-content {
+    color: $white;
+    text-align: center;
+  }
+
+  &__arena-title {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  &__arena-info {
+    margin-bottom: 20px;
+
+    span + span {
+      margin-left: 20px;
+    }
+  }
+
+  &__arena-buttons {
+
+    button + button {
+      margin-left: 10px;
+
+      @include r($sm) {
+          margin-left: 0;
+          margin-top: 10px;
+      }
+    }
+  }
+
+  &__pagination {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      box-shadow: inset 28px 1px 23px -9px $white;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      right: 0;
+      top: 0;
+      z-index: 2;
+      box-shadow: inset -28px 1px 23px -9px $white;
+    }
+  }
+
+  &__pagination-item {
+    width: fit-content;
+    position: relative;
+    
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+
+    &--noborder {
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($white, 0.5);
+      }
+
+      .entertainment-mob__pagination-img {
+        border: none;
+      }
+    }
+  }
+
+  &__pagination-img {
+    border: 5px solid $red;
+    border-radius: 10px;
+  }
+
+  &__pagination-name {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 12px;
+    right: 50%;
+    bottom: 12px;
+    color: $white;
+    transform: translateX(50%) ;
+  }
+}
+
+
+
+
+

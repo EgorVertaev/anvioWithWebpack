@@ -1,7 +1,7 @@
 import "../scss/main.scss"
 import "../index.html"
 
-import Swiper from "swiper"
+import Swiper from "swiper/bundle"
 
 const burger = document.querySelector('.menu__burger')
 const burgerInner = document.querySelector('.menu__burger-inner')

@@ -11,6 +11,10 @@
   align-items: flex-end;
   position: relative;
 
+  @include r($xxl) {
+      padding: 15px;
+  }
+  
   &__content {
     color: $white;
     text-align: center;

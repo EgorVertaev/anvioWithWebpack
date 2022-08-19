@@ -32,7 +32,7 @@ body {
     &.overlay-modal {
 
         overflow: hidden;
-        
+
         .wrapper {
             content: "";
             position: absolute;
@@ -68,6 +68,14 @@ body {
     @include r($md) {
         padding: 0 20px;
     }
+
+    &--nopadding {
+        padding: 0;
+    }
+
+    &--noprigth {
+        padding: 0 0 0 30px;
+    }
 }
 
 
@@ -77,14 +85,27 @@ body {
     justify-content: space-between;
     align-items: center;
 
+    @include r($sm) {
+        justify-content: center;
+    }
+
     &__title {
         font-size: 64px;
         font-weight: 600;
+
+        @include r($sm) {
+            font-size: 32px;
+        }
     }
 
     &__btn  {
         color: $black;
+
+        @include r($md) {
+            display: none;
+        }
     }
+    
 }
 
 

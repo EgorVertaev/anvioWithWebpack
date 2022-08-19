@@ -1,5 +1,9 @@
 .info {
   margin-bottom: 157px;
+
+  @include r($sm) {
+    margin-bottom: 20px;
+  }
   &__inner {
     display: flex;
     flex-direction: column;

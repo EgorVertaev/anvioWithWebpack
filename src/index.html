@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anvio | Home</title>
   </head>
-  <body>
+  <body class="overlay-modal">
     
     <div class="wrapper"></div>
     <header class="header">
@@ -538,7 +538,7 @@
     <main class="main">
 
       <section class="preview">
-        <div class="container">
+        <div class="container container--nopadding">
           <div class="preview__wrapper">
             <div class="preview__inner">
               <div class="preview__text">
@@ -730,7 +730,7 @@
         </div>
       </section>
 
-      <div class="modal">
+      <div class="modal modal--active">
         <div class="modal__inner">
           <div class="modal__content">
               <div class="modal__main">
@@ -823,7 +823,7 @@
                     <li class="modal__games-item">
                       <div class="modal__games-top">
                        <h3 class="modal__games-title">
-                         Аттракционы
+                         Аттрак
                        </h3>
                        <div class="modal__games-cost">
                          <span>500 ₴</span>
@@ -879,12 +879,124 @@
             <div class="block">
               <h2 class="block__title">Наши развлечения</h2>
             </div>
+
+            <div class="entertainment-mob">
+              <ul class="entertainment-mob__buttons">
+                <li class="entertainment-mob__item">
+                  <button class="btn-box entertainment-mob__button entertainment-mob__button--active" type="button">
+                    Арены
+                    <svg class="entertainment-mob__icon" width="20" height="10">
+                      <use xlink:href="images/sprite.svg#arrowdown"></use>
+                    </svg>
+                  </button>
+
+                  <div class="entertainment-mob__sub">
+                    <div class="entertainment-mob__arena">
+                      <div class="entertainment-mob__content">
+                        <div class="entertainment-mob__photo">
+                          <img src="./images/content/arena/arena.jpg" alt="arena">
+                        </div>
+                        <h2 class="entertainment-mob__title">Арена</h2>
+                        <div class="entertainment-mob__inner">
+                          <span class="entertainment-mob__info entertainment-mob__info--gamepad">2-12</span>
+                          <span class="entertainment-mob__info entertainment-mob__info--time">40 мин.</span>
+                          <span class="entertainment-mob__info entertainment-mob__info--money">от 250 ₴</span>
+                        </div>
+                        <p class="entertainment-mob__text">
+                          В нашем парке можно устроить праздник, который не
+                          забудется ни имененниками, ни их гостями.
+                        </p>
+                        <div class="entertainment-mob__buttons">
+                          <a class="btn btn--pmedium entertainment-mob__btn" href="#">цены</a>
+                          <a class="btn btn--trans-br-cb entertainment-mob__btn" href="#">подробнее</a>
+                        </div>
+                      </div>
+                      <div class="entertainment-mob__slider">
+                        <div class="entertainment-mob__arena-card">
+                          <div class="entertainment-mob__arena-content">
+                            <h2 class="entertainment-mob__arena-title">city-z</h2>
+                            <div class="entertainment-mob__arena-info">
+                              <span>Шутер</span>
+                              <span>30 мин.</span>
+                              <span>1-4 чел.</span>
+                              <span>12+</span>
+                            </div>
+                            <div class="entertainment-mob__arena-buttons">
+                              <button class="btn btn--footerform">
+                                забронировать
+                              </button>
+                              <button class="btn btn--trans-bw-cw">
+                                подробнее
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <ul class="entertainment-mob__pagination">
+                          <li class="entertainment-mob__pagination-item">
+                              <img class="entertainment-mob__pagination-img" src="./images/content/arena/video1.jpg" alt="" width="90px" height="90px">
+                              <span class="entertainment-mob__pagination-name">City-z</span>
+                          </li>
+                          <li class="entertainment-mob__pagination-item entertainment-mob__pagination-item--noborder">
+                            <img class="entertainment-mob__pagination-img" src="./images/content/arena/video2.jpg" alt="" width="90px" height="90px">
+                            <span class="entertainment-mob__pagination-name">City Z: SURVIVORS</span>
+                        </li>
+                        <li class="entertainment-mob__pagination-item entertainment-mob__pagination-item--noborder">
+                          <img class="entertainment-mob__pagination-img" src="./images/content/arena/video3.jpg" alt="" width="90px" height="90px">
+                          <span class="entertainment-mob__pagination-name">City Z: Antidote</span>
+                      </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="entertainment-mob__item">
+                  <button class="btn-box entertainment-mob__button" type="button">
+                    Аттракционы
+                    <svg class="entertainment-mob__icon" width="20" height="10">
+                      <use xlink:href="images/sprite.svg#arrowdown"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="entertainment-mob__item">
+                  <button class="btn-box entertainment-mob__button" type="button">
+                    стенды
+                    <svg class="entertainment-mob__icon" width="20" height="10">
+                      <use xlink:href="images/sprite.svg#arrowdown"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="entertainment-mob__item">
+                  <button class="btn-box entertainment-mob__button" type="button">
+                    кубы
+                    <svg class="entertainment-mob__icon" width="20" height="10">
+                      <use xlink:href="images/sprite.svg#arrowdown"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="entertainment-mob__item">
+                  <button class="btn-box entertainment-mob__button" type="button">
+                    Детская зона
+                    <svg class="entertainment-mob__icon" width="20" height="10">
+                      <use xlink:href="images/sprite.svg#arrowdown"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="entertainment-mob__item">
+                  <button class="btn-box entertainment-mob__button" type="button">
+                    PVP-соревнования
+                    <svg class="entertainment-mob__icon" width="20" height="10">
+                      <use xlink:href="images/sprite.svg#arrowdown"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+
             <ul class="entertainment__buttons">
               <li class="entertainment__item">
-                <button
-                  class="btn-box btn-box--active entertainment__button"
-                  type="button"
-                >
+                <button class="btn-box btn-box--active entertainment__button"
+                  type="button">
                   Арены
                 </button>
               </li>
@@ -1293,12 +1405,12 @@
         </div>
       </section> -->
 
-      <!-- <section class="news">
-        <div class="container">
+      <section class="news">
+        <div class="container container--noprigth">
           <div class="news__inner">
             <div class="block">
               <h2 class="block__title">Новости</h2>
-              <button class="btn btn--trans-br-cb">все новости</button>
+              <button class="btn btn--trans-br-cb block__btn" >все новости</button>
             </div>
             <div class="news__slider">
               <div class="slider-news">
@@ -1475,9 +1587,12 @@
                 </div>
               </div>
             </div>
+            <div class="news__mob-btn">
+              <button class="btn btn--trans-br-cb" >все новости</button>
+            </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
     </main>
 

@@ -1,7 +1,6 @@
 .preview {
   
   &__wrapper  {
-    margin: 0 -30px;
     background-image: url(./../images/content/backgroundTop.png);
     background-repeat: no-repeat;
     background-position: left top;
@@ -363,8 +362,16 @@
     align-items: center;
     border-radius: 50%;
     position: absolute;
-    right: -20px;
+    right: 20px;
     top: 160px;
+
+    @include r($xsl) {
+        top: 400px
+    }
+
+    @include r($xxxl) {
+      top: 500px
+    }
 
     @include r($xxl) {
       width: 700px;
@@ -378,7 +385,7 @@
     }
 
     @include r($lg) {
-      top: 980px;
+      top: 1010px;
       right: 50%;
       transform: translateX(50%);
     }
@@ -402,6 +409,13 @@
     }
   }
 
+  &__link {
+    @include r($md) {
+        width: 100px;
+        height: 100px;
+    }
+  }
+
   &__location {
     background-color: rgba($white, 0.9);
     width: 450px;
@@ -415,6 +429,10 @@
     right: 50%;
     transform: translateX(65%);
 
+    @include r($xsl) {
+        right: 60%;
+        bottom: -120px;
+    }
 
     @include r($xxl) {
       bottom: -40px;

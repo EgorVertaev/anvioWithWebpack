@@ -1,0 +1,20 @@
+.news {
+  padding-top: 100px;
+
+  &__slider{
+    margin-bottom: 30px;
+  }
+
+  &__mob-btn {
+    display: none;
+    text-align: center;
+    @include r($md) {
+      display: block;
+      margin-bottom: 100px;
+    }
+
+    button {
+      padding: 10px 20px;
+    }
+  }
+}
